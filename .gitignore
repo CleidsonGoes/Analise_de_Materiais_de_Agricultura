@@ -1,0 +1,12 @@
+# Ambiente virtual
+.venv/
+
+# Arquivos Python compilados
+__pycache__/
+*.pyc
+
+# Notebooks temporários
+.ipynb_checkpoints/
+
+# Dados processados
+data/processed/
