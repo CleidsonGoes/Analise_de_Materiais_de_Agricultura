@@ -1,58 +1,45 @@
 """
-Módulo principal da pipeline de Análise de Dados de Materiais de agricultura
------------------------------------------------------------
+Módulo: main.py
+----------------
+Script principal para execução da pipeline ETL (Extract, Transform, Load).
 
-Este script é o ponto de entrada do projeto e executa a primeira etapa da
-pipeline ETL: a **extração** dos dados brutos armazenados na pasta `data/raw/`.
+Este módulo orquestra as etapas do processo ETL:
+1. Extração dos dados brutos (Extract)
+2. (Futuro) Transformação dos dados (Transform)
+3. (Futuro) Carregamento dos dados tratados (Load)
 
-Etapas:
-1. Configura o sistema de logs.
-2. Chama a função de extração dos dados brutos (Extract).
-3. Exibe no terminal o resultado da execução.
-
-Etapas futuras:
-- Transformação: limpeza e padronização dos dados.
-- Carga: exportação dos dados tratados para a pasta `data/processed/` ou para
-um banco de dados.
-
-Execução:
-----------
-python main.py
-
-Autor: Cleidson Goes
-Data: 2025-10-27
+Todas as mensagens e erros são registrados com o logger padronizado
+que inclui nome da etapa, cor por nível de log e saída simultânea no terminal
+e no arquivo de log `logs/etl_pipeline.log`.
 """
 
-import logging
+from src.utils.logger import log_etapa
 from src.etl.extract import extrair_dados
 
 
-# Configuração de logging
-def configurar_logs():
-    """Configura o sistema de logging para console e arquivo."""
-    logging.basicConfig(level=logging.INFO,
-                        format="%(asctime)s - %(levelname)s - %(message)s",
-                        handlers=[
-                            logging.FileHandler("logs/etl_pipelin.log",
-                                                mode="a", encoding="utf-8"),
-                            logging.StreamHandler()  # exibe no terminal também
-                            ]
-                        )
-
-
 def main():
-    """Executa a pipeline de ETL (por enquanto, apenas a etapa Extract)."""
+    """Executa a pipeline ETL completa."""
 
-    configurar_logs()
+    etapa = "MAIN"
     caminho_arquivo = "data/raw/agricultural_raw_material.csv"
 
-    logging.info("Iniciando pipeline de ETL...")
+    log_etapa(etapa, "INFO", "Iniciando pipeline ETL...")
 
     try:
-        df = extrair_dados(caminho_arquivo)
-        logging.info("Extração concluída. Total de linhas: %s", len(df))
+        # === ETAPA: EXTRACT ===
+        dados = extrair_dados(caminho_arquivo)
+        log_etapa(etapa, "INFO",
+                  f"Extração de dados sucedida! Total de linhas: {len(dados)}")
+
+        # === Futuras etapas ===
+        # transformados = transformar_dados(dados)
+        # carregar_dados(transformados)
+
+        log_etapa(etapa, "INFO", "Pipeline ETL finalizada com sucesso!")
+
     except Exception as e:  # noqa: W0718
-        logging.error("Falha inesperada na pipeline: %s", e)
+        log_etapa(etapa, "ERROR", f"Erro na execução da pipeline: {e}")
+        raise
 
 
 if __name__ == "__main__":

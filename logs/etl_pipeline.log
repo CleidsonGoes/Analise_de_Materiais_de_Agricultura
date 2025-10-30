@@ -1,0 +1,5 @@
+2025-10-29 23:51:34 - INFO - [ETL] - ETAPA: MAIN - Iniciando pipeline ETL...
+2025-10-29 23:51:34 - INFO - [ETL] - ETAPA: EXTRACT - Iniciando extração de dados do arquivo: data/raw/agricultural_raw_material.csv
+2025-10-29 23:51:34 - INFO - [ETL] - ETAPA: EXTRACT - Extração sucedida. Total de linhas: 361
+2025-10-29 23:51:34 - INFO - [ETL] - ETAPA: MAIN - Extração de dados sucedida! Total de linhas: 361
+2025-10-29 23:51:34 - INFO - [ETL] - ETAPA: MAIN - Pipeline ETL finalizada com sucesso!
