@@ -15,6 +15,7 @@ e no arquivo de log `logs/etl_pipeline.log`.
 
 from src.utils.logger import log_etapa
 from src.etl.extract import extrair_dados
+from src.etl.transform import transformar_dados
 
 
 def main():
@@ -31,8 +32,12 @@ def main():
         log_etapa(etapa, "INFO",
                   f"Extração de dados sucedida! Total de linhas: {len(dados)}")
 
+        # === ETAPA: TRANSFORM ===
+        transformados = transformar_dados(dados)
+        log_etapa(etapa, "INFO",
+                  f"Pipeline sucedida! Linhas finais: {len(transformados)}")
+
         # === Futuras etapas ===
-        # transformados = transformar_dados(dados)
         # carregar_dados(transformados)
 
         log_etapa(etapa, "INFO", "Pipeline ETL finalizada com sucesso!")

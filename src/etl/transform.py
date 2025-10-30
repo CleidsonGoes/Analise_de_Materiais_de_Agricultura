@@ -31,3 +31,20 @@ def transformar_dados(df: pd.DataFrame) -> pd.DataFrame:
 
     etapa = "TRANSFORM"
     log_etapa(etapa, "INFO", "Iniciando transformação dos dados...")
+
+    try:
+        if df.empty:
+            raise ValueError("O DataFrame está vazio. Nada para transformar.")
+
+        # Add possíveis transformações
+
+        log_etapa(etapa, "INFO",
+                  f"Transformação sucedida. Total de linhas {len(df)}")
+        return df
+
+    # except ValueError as e:
+    #     log_etapa(etapa, "ERROR", str(e))
+    #     raise
+
+    # except Exception as e:
+    #     log_etapa(etapa, "ERROR", f"Erro inesperado na transformação: {e}")
