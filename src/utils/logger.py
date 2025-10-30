@@ -29,7 +29,7 @@ Exemplo de uso:
 from src.utils.logger import log_etapa
 
 log_etapa("EXTRACT", "info", "Iniciando extração de dados.")
-log_etapa("TRANSFORM", "error", "Erro ao processar coluna 'valor_venda'.")
+log_etapa("TRANSFORM", "error", "Erro ao processar coluna 'Month'.")
 
 Autor: Cleidson Goes
 Data: 2025-10-27
