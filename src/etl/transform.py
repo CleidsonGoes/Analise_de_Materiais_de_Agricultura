@@ -39,6 +39,10 @@ def transformar_dados(df: pd.DataFrame) -> pd.DataFrame:
         log_etapa(etapa, "INFO", "Resumo inicial dos dados:")
         print(df.info())
 
+        # Verificar valores nulos
+        nulos = df.isnull().sum()
+        log_etapa(etapa, "INFO", f"Valores nulos por coluna:\n{nulos}")
+
         if df.empty:
             raise ValueError("O DataFrame está vazio. Nada para transformar.")
 

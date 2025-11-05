@@ -28,3 +28,39 @@
 2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: TRANSFORM - Transformação sucedida. Total de linhas 361
 2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: MAIN - Pipeline sucedida! Linhas finais: 361
 2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: MAIN - Pipeline ETL finalizada com sucesso!
+2025-11-05 20:30:47 - INFO - [ETL] - ETAPA: MAIN - Iniciando pipeline ETL...
+2025-11-05 20:30:47 - INFO - [ETL] - ETAPA: EXTRACT - Iniciando extração de dados do arquivo: data/raw/agricultural_raw_material.csv
+2025-11-05 20:30:47 - INFO - [ETL] - ETAPA: EXTRACT - Extração sucedida. Total de linhas: 361
+2025-11-05 20:30:47 - INFO - [ETL] - ETAPA: MAIN - Extração de dados sucedida! Total de linhas: 361
+2025-11-05 20:30:47 - INFO - [ETL] - ETAPA: TRANSFORM - Iniciando transformação dos dados...
+2025-11-05 20:30:47 - INFO - [ETL] - ETAPA: TRANSFORM - Resumo inicial dos dados:
+2025-11-05 20:30:47 - INFO - [ETL] - ETAPA: TRANSFORM - Valores nulos por coluna:
+Month                            0
+Coarse wool Price               34
+Coarse wool price % Change      34
+Copra Price                     22
+Copra price % Change            22
+Cotton Price                     0
+Cotton price % Change            0
+Fine wool Price                 34
+Fine wool price % Change        34
+Hard log Price                   0
+Hard log price % Change          0
+Hard sawnwood Price             34
+Hard sawnwood price % Change    34
+Hide Price                      34
+Hide price % change             34
+Plywood Price                    0
+Plywood price % Change           0
+Rubber Price                     0
+Rubber price % Change            0
+Softlog Price                   34
+Softlog price % Change          34
+Soft sawnwood Price             34
+Soft sawnwood price % Change    34
+Wood pulp Price                  1
+Wood pulp price % Change         1
+dtype: int64
+2025-11-05 20:30:47 - INFO - [ETL] - ETAPA: TRANSFORM - Transformação sucedida. Total de linhas 361
+2025-11-05 20:30:47 - INFO - [ETL] - ETAPA: MAIN - Pipeline sucedida! Linhas finais: 361
+2025-11-05 20:30:47 - INFO - [ETL] - ETAPA: MAIN - Pipeline ETL finalizada com sucesso!
