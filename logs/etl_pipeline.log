@@ -3,3 +3,28 @@
 2025-10-29 23:51:34 - INFO - [ETL] - ETAPA: EXTRACT - Extração sucedida. Total de linhas: 361
 2025-10-29 23:51:34 - INFO - [ETL] - ETAPA: MAIN - Extração de dados sucedida! Total de linhas: 361
 2025-10-29 23:51:34 - INFO - [ETL] - ETAPA: MAIN - Pipeline ETL finalizada com sucesso!
+2025-10-30 16:27:12 - INFO - [ETL] - ETAPA: MAIN - Iniciando pipeline ETL...
+2025-10-30 16:27:12 - INFO - [ETL] - ETAPA: EXTRACT - Iniciando extração de dados do arquivo: data/raw/agricultural_raw_material.csv
+2025-10-30 16:27:12 - INFO - [ETL] - ETAPA: EXTRACT - Extração sucedida. Total de linhas: 361
+2025-10-30 16:27:12 - INFO - [ETL] - ETAPA: MAIN - Extração de dados sucedida! Total de linhas: 361
+2025-10-30 16:27:12 - INFO - [ETL] - ETAPA: TRANSFORM - Iniciando transformação dos dados...
+2025-10-30 16:27:12 - INFO - [ETL] - ETAPA: TRANSFORM - Transformação sucedida. Total de linhas 361
+2025-10-30 16:27:12 - INFO - [ETL] - ETAPA: MAIN - Pipeline sucedida! Linhas finais: 361
+2025-10-30 16:27:12 - INFO - [ETL] - ETAPA: MAIN - Pipeline ETL finalizada com sucesso!
+2025-11-05 20:01:16 - INFO - [ETL] - ETAPA: MAIN - Iniciando pipeline ETL...
+2025-11-05 20:01:16 - INFO - [ETL] - ETAPA: EXTRACT - Iniciando extração de dados do arquivo: data/raw/agricultural_raw_material.csv
+2025-11-05 20:01:16 - INFO - [ETL] - ETAPA: EXTRACT - Extração sucedida. Total de linhas: 361
+2025-11-05 20:01:16 - INFO - [ETL] - ETAPA: MAIN - Extração de dados sucedida! Total de linhas: 361
+2025-11-05 20:01:16 - INFO - [ETL] - ETAPA: TRANSFORM - Iniciando transformação dos dados...
+2025-11-05 20:01:16 - INFO - [ETL] - ETAPA: TRANSFORM - Transformação sucedida. Total de linhas 361
+2025-11-05 20:01:16 - INFO - [ETL] - ETAPA: MAIN - Pipeline sucedida! Linhas finais: 361
+2025-11-05 20:01:16 - INFO - [ETL] - ETAPA: MAIN - Pipeline ETL finalizada com sucesso!
+2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: MAIN - Iniciando pipeline ETL...
+2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: EXTRACT - Iniciando extração de dados do arquivo: data/raw/agricultural_raw_material.csv
+2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: EXTRACT - Extração sucedida. Total de linhas: 361
+2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: MAIN - Extração de dados sucedida! Total de linhas: 361
+2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: TRANSFORM - Iniciando transformação dos dados...
+2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: TRANSFORM - Resumo inicial dos dados:
+2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: TRANSFORM - Transformação sucedida. Total de linhas 361
+2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: MAIN - Pipeline sucedida! Linhas finais: 361
+2025-11-05 20:16:08 - INFO - [ETL] - ETAPA: MAIN - Pipeline ETL finalizada com sucesso!
